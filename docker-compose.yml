@@ -1,0 +1,25 @@
+version: '3'
+service:
+  movie:
+    image: udaystates9466/phonpemovie:v1
+    ports: 
+      - "8000:80"
+    deploy:
+      replicas: 4
+
+    loan:
+      image: udaystates9466/phonpeloan:v1
+      ports: 
+        - "8001:80"
+      deploy:
+        replicas: 4
+
+    dth:
+      image: udaystates9466/phonpedth:v1
+      ports:
+        - "8002:80"
+      deploy:
+        replicas: 4
+
+      
+
