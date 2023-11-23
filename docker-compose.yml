@@ -1,6 +1,6 @@
 ---
 version: "3"
-service:
+services:
   movie:
     image: udaystates9466/phonpemovie:v1
     ports:
